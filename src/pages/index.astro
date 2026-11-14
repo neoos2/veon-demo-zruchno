@@ -9,7 +9,8 @@ import Footer from "../components/Footer.astro";
 import FutureLink from "../components/FutureLink.astro";
 
 const H1 = "Ламінований гіпсокартон zruchno: готова стіна без шпаклювання і фарби";
-const img = (c: string) => `/img/decors/${c}.webp`;
+const B = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const img = (c: string) => `${B}img/decors/${c}.webp`;
 
 const heroLeaves = [
   { c: "936", cat: 1 }, { c: "959", cat: 1 }, { c: "920", cat: 1 }, { c: "975", cat: 1 }, { c: "1-105", cat: 2 },
@@ -161,7 +162,7 @@ const steps = [
       <div class="ogrid">
         {objects.map((o) => (
           <figure class={`obj ${o.cls}`}>
-            <img src={`/img/objects/${o.f}.webp`} alt={`${o.cap}: ${o.sub}`} width={o.w} height={o.h} loading="lazy" decoding="async" />
+            <img src={`${B}img/objects/${o.f}.webp`} alt={`${o.cap}: ${o.sub}`} width={o.w} height={o.h} loading="lazy" decoding="async" />
             <figcaption><b>{o.cap}</b> {o.sub}</figcaption>
           </figure>
         ))}

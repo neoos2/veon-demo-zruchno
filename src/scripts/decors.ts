@@ -28,5 +28,5 @@ if (root) {
       cur = 1 - cur;
       if (cap) cap.innerHTML = `Декор <b>${b.dataset.code}</b> · категорія ${b.dataset.cat}`;
     }));
-  layers[0].style.setProperty("--a", `url(/img/decors/936.webp)`);
+  layers[0].style.setProperty("--a", `url(${import.meta.env.BASE_URL.replace(/\/?$/, "/")}img/decors/936.webp)`);
 }
