@@ -1,0 +1,41 @@
+---
+import FutureLink from "./FutureLink.astro";
+---
+<footer class="ft">
+  <div class="wrap ft__grid">
+    <div>
+      <a class="logo logo--light" href="#top" aria-label="zruchno — на початок сторінки">
+        <svg class="logo__mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="2" y="2" width="36" height="36"/><rect x="12" y="12" width="16" height="16"/><path d="M2 2l10 10M38 2L28 12M2 38l10-10M38 38L28 28"/></svg>
+        <span class="logo__word">zruchno</span>
+      </a>
+      <p class="ft__legal">ТОВ «ЗРУЧНО ЮА»<br />02223, м. Київ, просп. Романа Шухевича, 14А, кв. 49<br />код ЄДРПОУ 45827776</p>
+    </div>
+    <div>
+      <h2 class="ft__h">Розділи</h2>
+      <ul>
+        <li><a href="#decors">Декори</a></li><li><a href="#formats">Формати й ціни</a></li><li><a href="#objects">Об’єкти</a></li><li><a href="#proof">Сертифікати</a></li><li><a href="#order">Замовлення</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="ft__h">Скоро на сайті</h2>
+      <ul>
+        <li><FutureLink note="Розділ у розробці">Монтаж</FutureLink></li>
+        <li><FutureLink note="Розділ у розробці">Питання й відповіді</FutureLink></li>
+        <li><FutureLink note="Розділ у розробці">Каталог</FutureLink></li>
+        <li><FutureLink note="Розділ у розробці">Усі декори</FutureLink></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="ft__h">Контакти</h2>
+      <ul>
+        <li><a class="ft__tel" href="tel:+380504430419">+38 050 443 04 19</a></li>
+        <li><a class="ft__tel" href="tel:+380973069021">+38 097 306 90 21</a></li>
+      </ul>
+      <p class="ft__legal">Самовивіз: м. Київ, вул. Каховська, 71а<br />Будні 9:00–17:00</p>
+    </div>
+  </div>
+</footer>
+<div class="bar" role="region" aria-label="Швидкий зв’язок">
+  <span class="bar__price"><b>від 725 грн/м²</b><small>з ПДВ</small></span>
+  <a class="btn" href="tel:+380504430419">Подзвонити</a>
+</div>

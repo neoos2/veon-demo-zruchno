@@ -1,0 +1,28 @@
+/* Hallmark · shape: wall-of-sheets · genre: modern-minimal · theme: custom · job: buy · idea: "Сторінка складена з листів 1090 мм, шов між листами — головна лінія сітки" · vibe: "точний, гіпсово-світлий, продуктовий, спокійний"
+ * paper: #EEEDE9 · accent: #B0915F · display: Geologica · body: Onest · hero: стіна з 5 листів у реальних декорах, біла лицьова панель з H1 і ціною · nav: одна смуга з якорями і телефоном · footer: графіт, 4 колонки · imagery: client photos · signature: перевісити декор на стіні з листів
+ * axes: light-gypsum/geometric-grotesk/gold-seam · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: E, кресленик шарів простий — додано розмірні підписи */
+:root {
+  --color-bg: #EEEDE9;
+  --color-surface: #FFFFFF;
+  --color-text: #141414;
+  --color-muted: #5C5A55;
+  --color-accent: #B0915F;
+  --color-accent-ink: #7A5C2E;
+  --color-dark: #1C1B19;
+  --color-line: #85827A;
+  --color-gypsum: #D9D6CC;
+  --font-display: "Geologica Variable", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Onest Variable", system-ui, sans-serif;
+  --radius: 2px;
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+  --dur: 600ms;
+  --seam: 2px;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 40px; --s5: 64px; --s6: 104px; --s7: 168px;
+  --space: 20px;
+  --container: 1440px;
+  --header-h: 60px;
+  --fs-h1: 34px; --fs-h2: 34px; --fs-h3: 24px; --fs-lead: 17px; --fs-body: 15px;
+}
+@media (min-width: 768px) { :root { --space: 32px; --header-h: 72px; --fs-h2: 40px; --fs-h3: 24px; --fs-lead: 18px; } }
+@media (min-width: 1024px) { :root { --space: 48px; --fs-h1: 52px; --fs-h2: 56px; } }

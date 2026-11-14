@@ -1,0 +1,36 @@
+---
+import FutureLink from "./FutureLink.astro";
+const nav = [
+  ["#decors", "Декори"], ["#formats", "Формати й ціни"], ["#objects", "Об’єкти"], ["#proof", "Сертифікати"], ["#order", "Замовлення"],
+];
+---
+<header class="hd">
+  <div class="hd__in">
+    <a class="logo" href="#top" aria-label="zruchno — на початок сторінки">
+      <svg class="logo__mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4">
+        <rect x="2" y="2" width="36" height="36"/><rect x="12" y="12" width="16" height="16"/>
+        <path d="M2 2l10 10M38 2L28 12M2 38l10-10M38 38L28 28"/>
+      </svg>
+      <span class="logo__word">zruchno</span>
+    </a>
+    <nav class="hd__nav" aria-label="Розділи сторінки">
+      <ul>{nav.map(([h, t]) => <li><a href={h}>{t}</a></li>)}</ul>
+    </nav>
+    <a class="hd__tel" href="tel:+380504430419">+38 050 443 04 19</a>
+    <a class="btn hd__cta" href="#order">Розрахувати</a>
+    <a class="hd__telicon" href="tel:+380504430419" aria-label="Подзвонити: +38 050 443 04 19">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+    </a>
+    <details class="menu">
+      <summary aria-label="Меню"><span class="menu__bars" aria-hidden="true"></span></summary>
+      <div class="menu__panel">
+        <ul>
+          {nav.map(([h, t]) => <li><a href={h}>{t}</a></li>)}
+          <li><FutureLink note="Розділ у розробці">Монтаж</FutureLink></li>
+          <li><FutureLink note="Розділ у розробці">Питання й відповіді</FutureLink></li>
+          <li><FutureLink note="Розділ у розробці">Каталог</FutureLink></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</header>
